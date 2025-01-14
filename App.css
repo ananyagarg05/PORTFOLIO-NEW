@@ -1,0 +1,89 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Desktop Styles */
+nav ul {
+  gap: 2rem;
+}
+
+section {
+  padding: 8rem 2rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  section {
+    padding: 6rem 1.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+}
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
